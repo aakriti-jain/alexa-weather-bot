@@ -1,0 +1,56 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "weather bot",
+      "types": [
+
+      ],
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+
+          ]
+        },
+        {
+          "name": "TemperatureIntent",
+          "slots": [
+            {
+              "name": "place",
+              "type": "AMAZON.Region"
+            }
+          ],
+          "samples": [
+            "temperature in {place}",
+            "heat in {place}"
+          ]
+        },
+        {
+          "name": "HumidityIntent",
+          "slots": [
+            {
+              "name": "place",
+              "type": "AMAZON.Region"
+            }
+          ],
+          "samples": [
+            "humidity in {place}",
+            "moisture in {place}"
+          ]
+        }
+      ]
+    }
+  }
+}
